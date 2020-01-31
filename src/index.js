@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import App from './components/App/App'
+import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
-import { Store } from './redux/store'
+import { Store } from './redux/store';
+
+import { fetchApi } from './redux/actions/fetchPeople';
+
+Store.dispatch(fetchApi());
 
 ReactDOM.render(
     <Provider store={Store}>

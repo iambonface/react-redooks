@@ -1,0 +1,2 @@
+export const INCREMENT = "INCREMENT";
+export const FETCH_PEOPLE_SUCCESS = "FETCH_PEOPLE_SUCCESS";
